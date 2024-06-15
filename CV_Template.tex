@@ -1,0 +1,218 @@
+\documentclass{memoir}
+\usepackage[utf8]{inputenc}
+\usepackage{titlesec}
+\usepackage{titling}
+\usepackage{fullpage}
+\usepackage{lipsum}
+\usepackage{changepage}
+\usepackage{comment}
+\usepackage{ragged2e}
+\usepackage{latexsym}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage{blindtext}
+\usepackage{multicol}
+%\usepackage{usenames,dvipsnames}{color}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{fontawesome}
+%\usepackage{xcolor}
+\usepackage[pdftex]{hyperref}
+\pagestyle{empty}
+\newcommand\blfootnote[1]{%
+  \begingroup
+  \renewcommand\thefootnote{}\footnote{#1}%
+  \addtocounter{footnote}{-1}%
+  \endgroup}
+
+\titlespacing*{\section}
+{0pt}{2.5ex plus 1ex minus .2ex}{0.5ex plus .2ex}
+\date{'EMAIL ADDRESS'}
+\titleformat{\section}
+{\large\bfseries}
+{}
+{0em}
+{}
+\titleformat{\subsection}
+{\big\bfseries}
+{}
+{1em}
+{}
+\titleformat{\subsubsection}
+{\big\bfseries}
+{}
+{2em}
+{}
+
+\hypersetup{%
+    colorlinks = true,
+    urlcolor=[rgb]{0.0,0,0},
+    urlbordercolor=[rgb]{0,0,0},
+    pdfborderstyle={/S/U/W 0.5}
+}
+%\pagestyle{fancy}
+%\fancyhf{} % clear all header and footer fields
+%\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-0.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+    \scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule]
+
+
+
+\begin{comment}
+IF I have any recearch on google scholar
+\href{https://scholar.google.com/}{\faGraduationCap}
+\end{comment}
+
+\begin{document}
+\begin{minipage}{0.5\textwidth}
+\textbf{\href{}{\HUGE 'NAME SURNAME'}}
+\end{minipage}
+\hfill
+\begin{minipage}{0.3\textwidth}
+\begin{flushright}
+{\faEnvelope} \href{mailto:'EMAIL'}{'EMAIL'}\\
+{\faPhone} 'PHONE NUMBER'\\
+\href{'LINKEDIN LINK'}{\faLinkedin}
+\href{'GITHUB LINK'}{\faGithub} 
+\end{flushright}
+\end{minipage}%
+
+\justifying
+\vspace{1.5mm}
+\noindent
+\begin{minipage}[t]{0.33\textwidth}
+\section{\textit{About Me}}
+\strut % Ensure consistent baseline
+\vspace{-3mm}
+\begin{adjustwidth}{}{}
+I am a hardworking and ambitious 'DEGREE/TITLE' looking to gain experience in the field 'FIELD'.  Always enthusiastic and up for a challenge. Finding creative solutions to problems (no matter what they are) is what I love doing. Given the opportunity to gain experience and learn something new, I would not hesitate to take it.
+\end{adjustwidth}
+\end{minipage}%
+\hfill
+\begin{minipage}[t]{0.64\textwidth}
+\section{\textit{Education}}
+\strut % Ensure consistent baseline
+\vspace{-3mm}
+\begin{adjustwidth}{0.5cm}{}
+{\textbf{'UNIVERSITY NAME'}} \hfill {\textit{'START YEAR - END YEAR'}}
+\vspace{1mm}
+\begin{adjustwidth}{0.5cm}{}
+\textbf{Degree:} 'DEGREE QUALIFICATION'\\
+\textbf{'THESIS TYPE'} 'THESIS TITLE'\\
+\textbf{Supervisor:} 'SUPERVISOR NAME'
+\end{adjustwidth}
+\vspace{4mm} % Adjusted vertical space
+{\textbf{'OTHER EDUCATION'}} \hfill {\textit{START YEAR - END YEAR}}
+\begin{adjustwidth}{0.5cm}{}
+'SHORT DESCRIPTION OF OTHER EDUCATION'
+\end{adjustwidth}
+\end{adjustwidth}
+\end{minipage}
+
+\section{\textit{Skills}}  
+\vspace{1mm}
+\begin{adjustwidth}{0.5cm}{}
+    \textbf{Technical}
+    \begin{adjustwidth}{0.5cm}{}
+        'LIST SKILLS SUCH AS' LaTeX, Python,  Linux...
+    \end{adjustwidth}
+    \textbf{Languages}
+    \begin{adjustwidth}{0.5cm}{}
+        'LANGUAGES'
+    \end{adjustwidth}
+    \textbf{Other}
+    \begin{adjustwidth}{0.5cm}{}
+        'LICENSES'
+    \end{adjustwidth}
+\end{adjustwidth}
+\section{\textit{Work Experience}}
+\vspace{1mm}
+\begin{adjustwidth}{0.5cm}{}
+
+    {\textbf{'JOB TITLE' (\href{'COMPANY LINK'}{'COMPANY NAME'})}} \hfill {\textit{'START DATE - END DATE'}}
+    \begin{adjustwidth}{0.5cm}{}
+       'DESCRIPTION OF WORK THAT YOU DID THAT HAD A CERTAIN IMPACT DEPENDING ON WHERE YOU ARE APPLYING. FOR EXAMPLE: DEVELOPED SOFTWARE THAT REDUCED THE COST OF HR OPERATIONS BY ONE MILLION DOLLARS..'
+    \end{adjustwidth}
+    \vspace{1.5mm}
+    {\textbf{'JOB TITLE' (\href{'COMPANY LINK'}{'COMPANY NAME'})}} \hfill {\textit{'START DATE - END DATE'}}
+    \begin{adjustwidth}{0.5cm}{}
+       'DESCRIPTION OF WORK THAT YOU DID THAT HAD A CERTAIN IMPACT DEPENDING ON WHERE YOU ARE APPLYING. FOR EXAMPLE: DEVELOPED SOFTWARE THAT REDUCED THE COST OF HR OPERATIONS BY ONE MILLION DOLLARS..'
+    \end{adjustwidth}
+    \vspace{1.5mm}
+    {\textbf{'JOB TITLE' (\href{'COMPANY LINK'}{'COMPANY NAME'})}} \hfill {\textit{'START DATE - END DATE'}}
+    \begin{adjustwidth}{0.5cm}{}
+       'DESCRIPTION OF WORK THAT YOU DID THAT HAD A CERTAIN IMPACT DEPENDING ON WHERE YOU ARE APPLYING. FOR EXAMPLE: DEVELOPED SOFTWARE THAT REDUCED THE COST OF HR OPERATIONS BY ONE MILLION DOLLARS..'
+    \end{adjustwidth}
+    \vspace{1.5mm}
+    {\textbf{'JOB TITLE' (\href{'COMPANY LINK'}{'COMPANY NAME'})}} \hfill {\textit{'START DATE - END DATE'}}
+    \begin{adjustwidth}{0.5cm}{}
+      'DESCRIPTION OF WORK THAT YOU DID THAT HAD A CERTAIN IMPACT DEPENDING ON WHERE YOU ARE APPLYING. FOR EXAMPLE: DEVELOPED SOFTWARE THAT REDUCED THE COST OF HR OPERATIONS BY ONE MILLION DOLLARS..'
+    \end{adjustwidth}
+    %\newpage
+   {\textbf{'JOB TITLE' (\href{'COMPANY LINK'}{'COMPANY NAME'})}} \hfill {\textit{'START DATE - END DATE'}}
+    \begin{adjustwidth}{0.5cm}{}
+      'DESCRIPTION OF WORK THAT YOU DID THAT HAD A CERTAIN IMPACT DEPENDING ON WHERE YOU ARE APPLYING. FOR EXAMPLE: DEVELOPED SOFTWARE THAT REDUCED THE COST OF HR OPERATIONS BY ONE MILLION DOLLARS..'
+    \end{adjustwidth}
+\end{adjustwidth}
+
+\section{\textit{Extracurricular Activities}}
+\vspace{1mm}
+\begin{adjustwidth}{0.5cm}{}
+    \textbf{Personal Projects}
+    \begin{adjustwidth}{0.5cm}{}
+        'DESCRIPTION OF YOUR PROJECTS THAT ARE SUITED TO THE JOB THAT YOU ARE APPLYING'
+        \vspace{1.5mm}\\
+        {\textbf{'FIRST PROJECT'}} \hfill {'YEAR OF PROJECT COMPLETION'}
+        \begin{adjustwidth}{0.5cm}{}
+            'EXPLAIN THE PROJECT IN MORE DETAIL AND HOW IT RELATES TO THE COMPANY YOU ARE APPLYING FOR'
+        \end{adjustwidth}
+        {\textbf{'SECOND PROJECT'}} \hfill {\textit{'YEAR OF PROJECT COMPLETION'}}
+        \begin{adjustwidth}{0.5cm}{}
+            'EXPLAIN THE PROJECT IN MORE DETAIL AND HOW IT RELATES TO THE COMPANY YOU ARE APPLYING FOR'
+        \end{adjustwidth}
+    \end{adjustwidth}
+        {\textbf{Volunteering}} \hfill {\textit{'START DATE - END DATE'}}
+        \begin{adjustwidth}{0.5cm}{}
+           'DESCRIBE WHERE YOU HAVE VOLUNTEERED AND HOW THAT AFFECTED YOU AS A WHOLE AND WHAT SKILLS YOU LEARNED THAT CAN HELP YOU WITH THE JOB THAT YOU ARE APPLYING FOR'
+        \end{adjustwidth}
+        {\textbf{'OTHER EXTRACURRICULAR'}} \hfill {\textit{'START DATE - END DATE'}}
+        \begin{adjustwidth}{0.5cm}{}
+            'EXPLAIN THE EXTRACURRICULAR, IT CAN BE A HOBBY WHERE YOU HAD SOME SUCCESSES. FOR EXAMPLE: I GOT FIRST PLACE IN THE NATIONAL TABLE TENNIS CHAMPIONSHIPS'
+        \end{adjustwidth}
+        {\textbf{'OTHER EXTRACURRICULAR'}} \hfill {\textit{'START DATE - END DATE'}}
+        \begin{adjustwidth}{0.5cm}{}
+            'EXPLAIN THE EXTRACURRICULAR, IT CAN BE A HOBBY WHERE YOU HAD SOME SUCCESSES. FOR EXAMPLE: I GOT FIRST PLACE IN THE NATIONAL TABLE TENNIS CHAMPIONSHIPS'
+        \end{adjustwidth}
+       {\textbf{'OTHER EXTRACURRICULAR'}} \hfill {\textit{'START DATE - END DATE'}}
+        \begin{adjustwidth}{0.5cm}{}
+            'EXPLAIN THE EXTRACURRICULAR, IT CAN BE A HOBBY WHERE YOU HAD SOME SUCCESSES. FOR EXAMPLE: I GOT FIRST PLACE IN THE NATIONAL TABLE TENNIS CHAMPIONSHIPS'
+        \end{adjustwidth}
+        {\textbf{'OTHER EXTRACURRICULAR'}} \hfill {\textit{'START DATE - END DATE'}}
+        \begin{adjustwidth}{0.5cm}{}
+            'EXPLAIN THE EXTRACURRICULAR, IT CAN BE A HOBBY WHERE YOU HAD SOME SUCCESSES. FOR EXAMPLE: I GOT FIRST PLACE IN THE NATIONAL TABLE TENNIS CHAMPIONSHIPS'
+        \end{adjustwidth}
+\end{adjustwidth}
+
+
+%CONFIDENTIALITY
+\vfill
+\let\thefootnote\relax\footnotetext{I hereby give consent for my personal data included in my application to be processed for the purposes of the recruitment process under the Regulation (EU) 2016/679 of the European Parliament and of the Council of 27 April 2016 on the protection of natural persons with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (General Data Protection Regulation). I also consent to processing of my personal data for the purposes of any future recruitment processes.}
+\end{document}
